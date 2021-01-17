@@ -1,0 +1,17 @@
+.container{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    position: relative;
+    left: 1rem;
+}
+
+.headline{
+    font-size: 3rem;
+    position: relative;
+    margin: -1rem 2rem;
+    top: -3rem;
+}

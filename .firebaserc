@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "familyrecipe-92b1e": {
+      "hosting": {
+        "Website": [
+          "familyrecipe-92b1e"
+        ]
+      }
+    }
+  }
+}

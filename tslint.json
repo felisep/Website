@@ -4,6 +4,8 @@
     "codelyzer"
   ],
   "rules": {
+    "no-trailing-whitespace": [true, "ignore-blank-lines"],
+    "prefer-const": [true, {"destructuring": "any"}],
     "align": {
       "options": [
         "parameters",
