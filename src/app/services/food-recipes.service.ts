@@ -1,25 +1,28 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, AngularFireList, AngularFireObject } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 import { Observable } from 'rxjs';
+import { Recipe } from '../models/recipe.model';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class FoodRecipesService {
 
-  private dbPath = 'test';
+  // From site
+  private dbPath = '/Learner';
+  
 
-  test!: AngularFireObject<any>;
-  learningRef!: AngularFireList<any>;
+  // From site
+  recipleObject: Observable<any>;
+  
 
-  constructor(db: AngularFireDatabase) {
-    this.test = db.object('/');
-    this.learningRef = db.list(this.dbPath);
-    console.log(db);
-    console.log(this.learningRef);
+  constructor(public db: AngularFireDatabase){
+    this.recipleObject = db.object(this.dbPath).valueChanges();
    }
 
-   getAll(): AngularFireList<any>{
-    return this.learningRef;
+    // From site
+   getAll(): Observable<any>{
+    return this.recipleObject;
    }
 }

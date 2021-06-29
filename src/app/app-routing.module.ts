@@ -3,12 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { RecipesPageComponent } from '../../src/app/features/pages/recipes-page/recipes-page.component';
 import { AppComponent } from './app.component';
 import { DessertPageComponent } from './features/pages/dessert-page/dessert-page.component';
+import { FoodListComponentComponent } from './features/pages/food-list-component/food-list-component.component';
 import { HomePageComponent } from './features/pages/home-page/home-page.component';
 import { PageNotFoundComponent } from './features/pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
-  { path: 'recipes', component: RecipesPageComponent },
+  { path: 'recipes', component: FoodListComponentComponent },
   { path: 'dessert', component: DessertPageComponent },
   { path: '**', component: PageNotFoundComponent },
   { path: '', redirectTo : '/home', pathMatch: 'full'}
