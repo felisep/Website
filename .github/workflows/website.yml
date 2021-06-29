@@ -23,5 +23,7 @@ jobs:
           node-version: '12.x'
       - name: Build
         run: npm build
+      - name: test
+        run: yarn run test
       - name: Lint
-        run: yarn lint
+        run: yarn run lint
