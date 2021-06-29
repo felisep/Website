@@ -9,7 +9,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AddButtonComponent } from '../shared/add-button/add-button.component';
 import { FoodCardComponent } from '../shared/food-card/food-card.component';
 
-
 /*import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage'; */
 
 @NgModule({
@@ -23,9 +22,9 @@ import { FoodCardComponent } from '../shared/food-card/food-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

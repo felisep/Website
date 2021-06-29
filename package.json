@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run nghm -- build --prod --configuration=production --progress=false --aot=true --source-map=false --build-optimizer",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint && tslint ./src/stories/**/*.ts -c ./tslint.json && npm run stylelint",
     "fix-lint": "ng lint --fix && tslint ./src/stories/**/*.ts -c ./tslint.json --project tsconfig.json --fix && npm run stylelint -- --fix",
