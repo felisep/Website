@@ -24,4 +24,4 @@ jobs:
       - name: Build
         run: npm build
       - name: Lint
-        run: npm lint
+        run: yarn lint
