@@ -12,8 +12,8 @@ export const environment = {
     storageBucket: 'familyrecipe-92b1e.appspot.com',
     messagingSenderId: '270528578516',
     appId: '1:270528578516:web:26e1ae1c52838d03d68c41',
-    measurementId: 'G-2B3HYWJ8SD'
-  }
+    measurementId: 'G-2B3HYWJ8SD',
+  },
 };
 
 /*

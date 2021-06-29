@@ -11,12 +11,12 @@ const routes: Routes = [
   { path: 'recipes', component: RecipesPageComponent },
   { path: 'dessert', component: DessertPageComponent },
   { path: '**', component: PageNotFoundComponent },
-  { path: '', redirectTo : '/home', pathMatch: 'full'}
+  { path: '', redirectTo : '/home', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }
 
@@ -25,5 +25,5 @@ export const routingComponents = [
   HomePageComponent,
   RecipesPageComponent,
   PageNotFoundComponent,
-  DessertPageComponent
+  DessertPageComponent,
 ];
