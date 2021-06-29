@@ -1,0 +1,29 @@
+
+# This workflow is for the website page
+# The workflow also is a starting file that is used for learning.
+
+name: Family Recipe Workflow
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Build
+        run: yarn build
+      - name: Test
+        run: yarn test
+      - name: Lint
+        run: yarn lint
